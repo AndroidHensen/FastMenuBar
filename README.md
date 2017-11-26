@@ -1,14 +1,14 @@
 # FastMenuBar
 
-A simple, practical menu bar for Android.[Download Demo]()
+A simple, practical menu bar for Android.
 
-<img src="/preview/preview1.png" height="500px"></img>
-<img src="/preview/preview2.png" height="500px"></img>
-<img src="/preview/preview3.png" height="500px"></img>
+<img src="/preview/preview1.png" height="400px"></img>
+<img src="/preview/preview2.png" height="400px"></img>
+<img src="/preview/preview3.png" height="400px"></img>
 
 # Usage
 
-You can directly copy the layout file style using the sample project and use the FastMenuBar that is already written.[Click here]() 
+You can directly copy the layout file style using the sample project and use the FastMenuBar that is already written.[Click here](https://github.com/AndroidHensen/FastMenuBar/tree/master/sample/src/main/res/layout) 
 
 ## Step1
 
@@ -83,7 +83,7 @@ public void onMenuBarClick(FastMenuBar v) {
 	app:fmb_icon="@drawable/icon_business1"  //defalut none
 	app:fmb_icon_enable="true"               //defalut true
 	app:fmb_message="In the sales"           //defalut ""
-	app:fmb_message_color="#F4B1B2"           //defalut #888888
+	app:fmb_message_color="#F4B1B2"          //defalut #888888
 	app:fmb_message_enable="true"            //defalut true
 	app:fmb_title="Sales"                    //defalut ""
 	app:fmb_title_color="#D72822"            //defalut #333333
@@ -91,14 +91,14 @@ public void onMenuBarClick(FastMenuBar v) {
 	app:fmb_top_line_enable="true" />        //defalut false
 ```
 
-<img src="/preview/Animation.gif" height="500px"></img>
+<img src="/preview/Animation.gif"></img>	
 
 ## Animation
 
-<img src="/preview/Animation1.gif" height="500px"></img>
-<img src="/preview/Animation2.gif" height="500px"></img>
-<img src="/preview/Animation3.gif" height="500px"></img>
-
+* fmb_none:Nothing
+* fmb_fade:It will fade in a second
+* fmb_jumb:It will jump in a second
+* fmb_normal:It will fade in and jump in a second
 
 # FAQ
 

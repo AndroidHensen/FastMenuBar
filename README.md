@@ -10,7 +10,7 @@ A simple, practical menu bar for Android.
 
 You can directly copy the layout file style using the sample project and use the FastMenuBar that is already written.[Click here](https://github.com/AndroidHensen/FastMenuBar/tree/master/sample/src/main/res/layout) 
 
-## Step1
+### Step1
 
 Add it in your root build.gradle at the end of repositories
 
@@ -23,7 +23,7 @@ allprojects {
 }
 ```
 
-## Step2
+### Step2
 
 Add the dependency
 
@@ -33,7 +33,7 @@ dependencies {
 }
 ```
 
-## Step3
+### Step3
 
 Add FastMenuBar in your layout
 
@@ -43,10 +43,10 @@ Add FastMenuBar in your layout
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	app:fmb_icon="@drawable/icon_office5"
-	app:fmb_title="交通报销" />
+	app:fmb_title="traffic" />
 ```
 
-## Step4
+### Step4
 
 Add clickListener for FastMenuBar
 
@@ -69,7 +69,7 @@ public void onMenuBarClick(FastMenuBar v) {
 
 # Attribute
 
-## Base
+### Base
 
 ```
 <com.handsome.library.FastMenuBar
@@ -93,12 +93,13 @@ public void onMenuBarClick(FastMenuBar v) {
 
 <img src="/preview/Animation.gif"></img>	
 
-## Animation
+### Animation
 
-* fmb_none:Nothing
-* fmb_fade:It will fade in a second
-* fmb_jumb:It will jump in a second
-* fmb_normal:It will fade in and jump in a second
+* app:fmb_animation_type
+	* fmb_none：Nothing
+	* fmb_fade：It will fade in a second
+	* fmb_jumb：It will jump in a second
+	* fmb_normal：It will fade in and jump in a second
 
 # FAQ
 

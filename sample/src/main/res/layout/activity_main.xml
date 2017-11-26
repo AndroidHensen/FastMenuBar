@@ -9,18 +9,39 @@
     tools:context="com.handsome.fastmenubar.MainActivity">
 
     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="Wechat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Wechat" />
+
     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="Office"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Office" />
+
     <Button
-        android:onClick="Business"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="Business"
         android:text="Business" />
+
+    <com.handsome.library.FastMenuBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fmb_animation_type="fmb_normal"
+        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow_enable="true"
+        app:fmb_bot_line_enable="true"
+        app:fmb_bot_line_margin="16dp"
+        app:fmb_icon="@drawable/icon_business1"
+        app:fmb_icon_enable="true"
+        app:fmb_message="In the sales"
+        app:fmb_message_color="#F4B1B2"
+        app:fmb_message_enable="true"
+        app:fmb_title="Sales"
+        app:fmb_title_color="#D72822"
+        app:fmb_title_enable="true"
+        app:fmb_top_line_enable="true" />
+
 </LinearLayout>

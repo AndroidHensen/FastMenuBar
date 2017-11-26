@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
+    tools:context="com.handsome.fastmenubar.MainActivity">
+
+    <com.handsome.library.FastMenuBar
+        android:id="@+id/fmb_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fmb_arrow_enable="false"
+        app:fmb_bot_line_enable="false"
+        app:fmb_icon="@drawable/icon_me_money"
+        app:fmb_title="钱包" />
+
+    <com.handsome.library.FastMenuBar
+        android:id="@+id/fmb_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:fmb_arrow_enable="false"
+        app:fmb_bot_line_margin="16dp"
+        app:fmb_icon="@drawable/icon_me_collect"
+        app:fmb_title="收藏" />
+
+    <com.handsome.library.FastMenuBar
+        android:id="@+id/fmb_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fmb_arrow_enable="false"
+        app:fmb_bot_line_margin="16dp"
+        app:fmb_icon="@drawable/icon_me_photo"
+        app:fmb_title="相册" />
+
+    <com.handsome.library.FastMenuBar
+        android:id="@+id/fmb_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fmb_arrow_enable="false"
+        app:fmb_bot_line_margin="16dp"
+        app:fmb_icon="@drawable/icon_me_card"
+        app:fmb_title="卡包" />
+
+    <com.handsome.library.FastMenuBar
+        android:id="@+id/fmb_smail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fmb_arrow_enable="false"
+        app:fmb_bot_line_enable="false"
+        app:fmb_icon="@drawable/icon_me_smail"
+        app:fmb_title="表情" />
+
+    <com.handsome.library.FastMenuBar
+        android:id="@+id/fmb_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:fmb_arrow_enable="false"
+        app:fmb_bot_line_enable="false"
+        app:fmb_icon="@drawable/icon_me_setting"
+        app:fmb_title="设置" />
+</LinearLayout>

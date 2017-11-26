@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/fmb_menu_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#3333"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fmb_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/fmb_menu_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp" />
+
+        <TextView
+            android:id="@+id/fmb_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fmb_menu_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/fmb_menu_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/ic_gray_arrow" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fmb_menu_bot_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#3333" />
+</LinearLayout>

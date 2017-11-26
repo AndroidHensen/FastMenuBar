@@ -96,10 +96,10 @@ public void onMenuBarClick(FastMenuBar v) {
 ### Animation
 
 * app:fmb_animation_type
-	* fmb_none£ºNothing
-	* fmb_fade£ºIt will fade in a second
-	* fmb_jumb£ºIt will jump in a second
-	* fmb_normal£ºIt will fade in and jump in a second
+	* fmb_none: Nothing
+	* fmb_fade: It will fade in a second
+	* fmb_jumb: It will jump in a second
+	* fmb_normal: It will fade in and jump in a second
 
 # FAQ
 

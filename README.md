@@ -29,7 +29,7 @@ Add the dependency
 
 ```
 dependencies {
-	compile 'com.github.AndroidHensen:FastMenuBar:v1.0'
+	compile 'com.github.AndroidHensen:FastMenuBar:1.0'
 }
 ```
 

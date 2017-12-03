@@ -24,4 +24,8 @@ public class MainActivity extends AppCompatActivity {
     public void Business(View view) {
         startActivity(new Intent(this, BusinessActivity.class));
     }
+
+    public void Colorful(View view) {
+        startActivity(new Intent(this, ColorfulActivity.class));
+    }
 }

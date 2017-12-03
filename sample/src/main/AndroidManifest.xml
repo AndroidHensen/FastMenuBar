@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".WechatActivity" />
         <activity android:name=".OfficeActivity" />
-        <activity android:name=".BusinessActivity"></activity>
+        <activity android:name=".BusinessActivity" />
+        <activity android:name=".ColorfulActivity"></activity>
     </application>
 
 </manifest>

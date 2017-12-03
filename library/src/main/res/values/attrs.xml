@@ -7,13 +7,12 @@
         <attr name="fmb_arrow" format="reference" />
         <attr name="fmb_icon_enable" format="boolean" />
         <attr name="fmb_arrow_enable" format="boolean" />
-        <attr name="fmb_title_enable" format="boolean" />
-        <attr name="fmb_message_enable" format="boolean" />
         <attr name="fmb_top_line_enable" format="boolean" />
         <attr name="fmb_bot_line_enable" format="boolean" />
         <attr name="fmb_bot_line_margin" format="dimension" />
         <attr name="fmb_title_color" format="color" />
         <attr name="fmb_message_color" format="color" />
+        <attr name="fmb_selected_color" format="color" />
         <attr name="fmb_animation_type" format="integer">
             <flag name="fmb_none" value="0" />
             <flag name="fmb_normal" value="1" />

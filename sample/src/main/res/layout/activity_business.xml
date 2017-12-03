@@ -12,10 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
-        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_icon="@drawable/icon_business1"
         app:fmb_message="获利中"
         app:fmb_message_color="#F4B1B2"
+        app:fmb_selected_color="#FCE4EC"
         app:fmb_title="运营"
         app:fmb_title_color="#D72822" />
 
@@ -23,10 +24,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
-        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_icon="@drawable/icon_business2"
         app:fmb_message="稳步上升"
         app:fmb_message_color="#F4B1B2"
+        app:fmb_selected_color="#FCE4EC"
         app:fmb_title="销售"
         app:fmb_title_color="#D72822" />
 
@@ -34,10 +36,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
-        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_icon="@drawable/icon_business3"
         app:fmb_message="排名前十名"
         app:fmb_message_color="#F4B1B2"
+        app:fmb_selected_color="#FCE4EC"
         app:fmb_title="企业"
         app:fmb_title_color="#D72822" />
 
@@ -46,8 +49,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:fmb_animation_type="fmb_normal"
-        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_icon="@drawable/icon_business4"
+        app:fmb_selected_color="#FCE4EC"
         app:fmb_title="任务"
         app:fmb_title_color="#D72822" />
 
@@ -55,8 +59,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
-        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_icon="@drawable/icon_business5"
+        app:fmb_selected_color="#FCE4EC"
         app:fmb_title="员工"
         app:fmb_title_color="#D72822" />
 
@@ -64,8 +69,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
-        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_icon="@drawable/icon_business6"
+        app:fmb_selected_color="#FCE4EC"
         app:fmb_title="客户"
         app:fmb_title_color="#D72822" />
 
@@ -74,8 +80,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:fmb_animation_type="fmb_normal"
-        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_icon="@drawable/icon_business7"
+        app:fmb_selected_color="#FCE4EC"
         app:fmb_title="数据"
         app:fmb_title_color="#D72822" />
 
@@ -83,8 +90,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
-        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_icon="@drawable/icon_business8"
+        app:fmb_selected_color="#FCE4EC"
         app:fmb_title="版本"
         app:fmb_title_color="#D72822" />
 
@@ -92,8 +100,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
-        app:fmb_arrow="@drawable/ic_pick_arrow"
+        app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_icon="@drawable/icon_business9"
+        app:fmb_selected_color="#FCE4EC"
         app:fmb_title="设置"
         app:fmb_title_color="#D72822" />
 

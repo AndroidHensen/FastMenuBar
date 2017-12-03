@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -44,13 +43,12 @@ public class FastMenuBar extends LinearLayout {
     private String fmb_message;
     private boolean fmb_icon_enable;
     private boolean fmb_arrow_enable;
-    private boolean fmb_title_enable;
-    private boolean fmb_message_enable;
     private boolean fmb_top_line_enable;
     private boolean fmb_bot_line_enable;
     private float fmb_bot_line_margin;
     private int fmb_title_color;
     private int fmb_message_color;
+    private int fmb_selected_color;
     private int fmb_animation_type;
 
     interface TYPE {
@@ -64,11 +62,11 @@ public class FastMenuBar extends LinearLayout {
         this(context, null);
     }
 
-    public FastMenuBar(Context context, @Nullable AttributeSet attrs) {
+    public FastMenuBar(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public FastMenuBar(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public FastMenuBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         initRootViews(context);
@@ -80,7 +78,7 @@ public class FastMenuBar extends LinearLayout {
     private void initRootViews(Context context) {
         views = new SparseArray<>();
         inflater = LayoutInflater.from(context);
-        fmb_view = inflater.inflate(R.layout.menu_bar_normal, null);
+        fmb_view = inflater.inflate(R.layout.fast_menu_bar, null);
         addView(fmb_view);
     }
 
@@ -92,13 +90,12 @@ public class FastMenuBar extends LinearLayout {
         fmb_message = ta.getString(R.styleable.FastMenuBar_fmb_message);
         fmb_icon_enable = ta.getBoolean(R.styleable.FastMenuBar_fmb_icon_enable, true);
         fmb_arrow_enable = ta.getBoolean(R.styleable.FastMenuBar_fmb_arrow_enable, true);
-        fmb_title_enable = ta.getBoolean(R.styleable.FastMenuBar_fmb_title_enable, true);
-        fmb_message_enable = ta.getBoolean(R.styleable.FastMenuBar_fmb_message_enable, true);
         fmb_top_line_enable = ta.getBoolean(R.styleable.FastMenuBar_fmb_top_line_enable, false);
         fmb_bot_line_enable = ta.getBoolean(R.styleable.FastMenuBar_fmb_bot_line_enable, true);
         fmb_bot_line_margin = ta.getDimension(R.styleable.FastMenuBar_fmb_bot_line_margin, 0);
         fmb_title_color = ta.getColor(R.styleable.FastMenuBar_fmb_title_color, 0);
         fmb_message_color = ta.getColor(R.styleable.FastMenuBar_fmb_message_color, 0);
+        fmb_selected_color = ta.getInteger(R.styleable.FastMenuBar_fmb_selected_color, Color.LTGRAY);
         fmb_animation_type = ta.getInteger(R.styleable.FastMenuBar_fmb_animation_type, TYPE.TYPE_NONE);
         ta.recycle();
     }
@@ -136,12 +133,6 @@ public class FastMenuBar extends LinearLayout {
         if (!fmb_arrow_enable) {
             fmb_menu_arrow.setVisibility(GONE);
         }
-        if (!fmb_title_enable) {
-            fmb_menu_title.setVisibility(GONE);
-        }
-        if (!fmb_message_enable) {
-            fmb_menu_message.setVisibility(GONE);
-        }
         if (!fmb_bot_line_enable) {
             fmb_menu_bot_line.setVisibility(INVISIBLE);
         }
@@ -154,7 +145,6 @@ public class FastMenuBar extends LinearLayout {
             fmb_menu_bot_line.setLayoutParams(lp);
         }
     }
-
 
     private void addAnimation() {
         AnimationSet animationSet = new AnimationSet(true);
@@ -173,10 +163,10 @@ public class FastMenuBar extends LinearLayout {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                fmb_menu.setBackgroundColor(Color.LTGRAY);
+                fmb_menu.setBackgroundColor(fmb_selected_color);
                 break;
             case MotionEvent.ACTION_MOVE:
-                fmb_menu.setBackgroundColor(Color.LTGRAY);
+                fmb_menu.setBackgroundColor(fmb_selected_color);
                 break;
             case MotionEvent.ACTION_UP:
                 fmb_menu.setBackgroundColor(Color.WHITE);

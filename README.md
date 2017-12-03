@@ -29,7 +29,7 @@ Add the dependency
 
 ```
 dependencies {
-	compile 'com.github.AndroidHensen:FastMenuBar:1.0'
+	compile 'com.github.AndroidHensen:FastMenuBar:1.0.1'
 }
 ```
 
@@ -76,7 +76,7 @@ public void onMenuBarClick(FastMenuBar v) {
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	app:fmb_animation_type="fmb_normal"      //default none 
-	app:fmb_arrow="@drawable/ic_pick_arrow"  //default gray
+	app:fmb_arrow="@drawable/ic_pick_arrow"  //default GRAY
 	app:fmb_arrow_enable="true"              //default true
 	app:fmb_bot_line_enable="true"           //default true  
 	app:fmb_bot_line_margin="16dp"           //defalut 0
@@ -84,10 +84,9 @@ public void onMenuBarClick(FastMenuBar v) {
 	app:fmb_icon_enable="true"               //defalut true
 	app:fmb_message="In the sales"           //defalut ""
 	app:fmb_message_color="#F4B1B2"          //defalut #888888
-	app:fmb_message_enable="true"            //defalut true
+	app:fmb_selected_color="#FCE4EC"         //defalut LTGRAY
 	app:fmb_title="Sales"                    //defalut ""
 	app:fmb_title_color="#D72822"            //defalut #333333
-	app:fmb_title_enable="true"              //defalut true
 	app:fmb_top_line_enable="true" />        //defalut false
 ```
 
@@ -99,6 +98,15 @@ public void onMenuBarClick(FastMenuBar v) {
 	* fmb_jumb: It will jump in a second
 	* fmb_normal: It will fade in and jump in a second
 
+### Arrow
+
+* app:fmb_arrow
+    * fmb_blue_arrow
+    * fmb_gray_arrow
+    * fmb_pick_arrow
+    * fmb_red_arrow
+    * fmb_yellow_arrow
+
 # FAQ
 
 **Can i use FastMenuBar for ListView Item?**
@@ -107,6 +115,11 @@ you can't.There is no caching mechanism for FastMenuBar,It only works for settin
 
 # Changelog
 
+* 1.0.1
+    * Delete attribute for fmb_title_enable and fmb_message_enable
+    * Add attribute for fmb_selected_color
+    * Add the arrow color to five
+    * Add ColorActivity in sample
 * 1.0
 	* Initial release
 	

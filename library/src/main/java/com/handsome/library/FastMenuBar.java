@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.SparseArray;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -51,6 +52,10 @@ public class FastMenuBar extends LinearLayout {
     private int fmb_selected_color;
     private int fmb_animation_type;
 
+    private int fmb_title_size = 14;
+    private int fmb_message_size = 12;
+    private int fmb_icon_size = 30;
+
     interface TYPE {
         int TYPE_NONE = 0x00;
         int TYPE_NORMAL = 0x01;
@@ -85,6 +90,7 @@ public class FastMenuBar extends LinearLayout {
     private void initAttrs(Context context, AttributeSet attrs, int defStyleAttr) {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.FastMenuBar, defStyleAttr, 0);
         fmb_icon = ta.getDrawable(R.styleable.FastMenuBar_fmb_icon);
+        fmb_icon_size = (int) ta.getDimension(R.styleable.FastMenuBar_fmb_icon_size, dp2px(fmb_icon_size));
         fmb_arrow = ta.getDrawable(R.styleable.FastMenuBar_fmb_arrow);
         fmb_title = ta.getString(R.styleable.FastMenuBar_fmb_title);
         fmb_message = ta.getString(R.styleable.FastMenuBar_fmb_message);
@@ -94,7 +100,9 @@ public class FastMenuBar extends LinearLayout {
         fmb_bot_line_enable = ta.getBoolean(R.styleable.FastMenuBar_fmb_bot_line_enable, true);
         fmb_bot_line_margin = ta.getDimension(R.styleable.FastMenuBar_fmb_bot_line_margin, 0);
         fmb_title_color = ta.getColor(R.styleable.FastMenuBar_fmb_title_color, 0);
+        fmb_title_size = (int) ta.getDimension(R.styleable.FastMenuBar_fmb_title_size, dp2px(fmb_title_size));
         fmb_message_color = ta.getColor(R.styleable.FastMenuBar_fmb_message_color, 0);
+        fmb_message_size = (int) ta.getDimension(R.styleable.FastMenuBar_fmb_message_size, dp2px(fmb_message_size));
         fmb_selected_color = ta.getInteger(R.styleable.FastMenuBar_fmb_selected_color, Color.LTGRAY);
         fmb_animation_type = ta.getInteger(R.styleable.FastMenuBar_fmb_animation_type, TYPE.TYPE_NONE);
         ta.recycle();
@@ -108,6 +116,10 @@ public class FastMenuBar extends LinearLayout {
         fmb_menu_message = getView(R.id.fmb_menu_message);
         fmb_menu_top_line = getView(R.id.fmb_menu_top_line);
         fmb_menu_bot_line = getView(R.id.fmb_menu_bot_line);
+
+        fmb_menu_title.setTextSize(TypedValue.COMPLEX_UNIT_PX, fmb_title_size);
+        fmb_menu_message.setTextSize(TypedValue.COMPLEX_UNIT_PX, fmb_message_size);
+        fmb_menu_icon.getLayoutParams().width = fmb_menu_icon.getLayoutParams().height = fmb_icon_size;
 
         if (fmb_icon != null) {
             fmb_menu_icon.setImageDrawable(fmb_icon);
@@ -230,5 +242,15 @@ public class FastMenuBar extends LinearLayout {
         return (T) view;
     }
 
+    /**
+     * dp2px
+     *
+     * @param pxValue
+     * @return
+     */
+    private int dp2px(float pxValue) {
+        final float scale = getResources().getDisplayMetrics().density;
+        return (int) (pxValue * scale + 0.5f);
+    }
 
 }

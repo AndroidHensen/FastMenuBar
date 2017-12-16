@@ -12,11 +12,14 @@
         app:fmb_arrow="@drawable/fmb_pick_arrow"
         app:fmb_bot_line_margin="16dp"
         app:fmb_icon="@drawable/icon_office5"
+        app:fmb_icon_size="40dp"
         app:fmb_message="Pick Pick"
         app:fmb_message_color="#F06292"
+        app:fmb_message_size="14sp"
         app:fmb_selected_color="#FCE4EC"
         app:fmb_title="Pick Pick"
         app:fmb_title_color="#E91E63"
+        app:fmb_title_size="16sp"
         app:fmb_top_line_enable="true" />
 
     <com.handsome.library.FastMenuBar
@@ -26,11 +29,14 @@
         app:fmb_arrow="@drawable/fmb_blue_arrow"
         app:fmb_bot_line_margin="16dp"
         app:fmb_icon="@drawable/icon_office5"
+        app:fmb_icon_size="36dp"
         app:fmb_message="Blue Blue"
         app:fmb_message_color="#64B5F6"
+        app:fmb_message_size="13sp"
         app:fmb_selected_color="#E3F2FD"
         app:fmb_title="Blue Blue"
         app:fmb_title_color="#2196F3"
+        app:fmb_title_size="15sp"
         app:fmb_top_line_enable="true" />
 
     <com.handsome.library.FastMenuBar
@@ -40,11 +46,14 @@
         app:fmb_arrow="@drawable/fmb_gray_arrow"
         app:fmb_bot_line_margin="16dp"
         app:fmb_icon="@drawable/icon_office5"
+        app:fmb_icon_size="32dp"
         app:fmb_message="Gray Gray"
         app:fmb_message_color="#90A4AE"
+        app:fmb_message_size="12sp"
         app:fmb_selected_color="#ECEFF1"
         app:fmb_title="Gray Gray"
         app:fmb_title_color="#607D8B"
+        app:fmb_title_size="14sp"
         app:fmb_top_line_enable="true" />
 
     <com.handsome.library.FastMenuBar
@@ -54,11 +63,14 @@
         app:fmb_arrow="@drawable/fmb_yellow_arrow"
         app:fmb_bot_line_margin="16dp"
         app:fmb_icon="@drawable/icon_office5"
+        app:fmb_icon_size="28dp"
         app:fmb_message="Yellow Yellow"
         app:fmb_message_color="#FFF176"
+        app:fmb_message_size="11sp"
         app:fmb_selected_color="#FFFDE7"
         app:fmb_title="Yellow Yellow"
         app:fmb_title_color="#FFEB3B"
+        app:fmb_title_size="13sp"
         app:fmb_top_line_enable="true" />
 
     <com.handsome.library.FastMenuBar
@@ -68,11 +80,14 @@
         app:fmb_arrow="@drawable/fmb_red_arrow"
         app:fmb_bot_line_margin="16dp"
         app:fmb_icon="@drawable/icon_office5"
+        app:fmb_icon_size="24dp"
         app:fmb_message="Red Red"
         app:fmb_message_color="#E57373"
+        app:fmb_message_size="10sp"
         app:fmb_selected_color="#FFEBEE"
         app:fmb_title="Red Red"
         app:fmb_title_color="#F44336"
+        app:fmb_title_size="12sp"
         app:fmb_top_line_enable="true" />
 
 </LinearLayout>

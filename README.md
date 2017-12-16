@@ -2,9 +2,10 @@
 
 A simple, practical menu bar for Android.
 
-<img src="/preview/preview1.png" height="400px"></img>
-<img src="/preview/preview2.png" height="400px"></img>
-<img src="/preview/preview3.png" height="400px"></img>
+<img src="/preview/preview0.png" height="300px"></img>
+<img src="/preview/preview1.png" height="300px"></img>
+<img src="/preview/preview2.png" height="300px"></img>
+<img src="/preview/preview3.png" height="300px"></img>
 
 # Usage
 
@@ -81,12 +82,15 @@ public void onMenuBarClick(FastMenuBar v) {
 	app:fmb_bot_line_enable="true"           //default true  
 	app:fmb_bot_line_margin="16dp"           //defalut 0
 	app:fmb_icon="@drawable/icon_business1"  //defalut none
+	app:fmb_icon_size="30dp"                 //defalut 30dp
 	app:fmb_icon_enable="true"               //defalut true
 	app:fmb_message="In the sales"           //defalut ""
 	app:fmb_message_color="#F4B1B2"          //defalut #888888
+	app:fmb_message_size="12sp"              //defalut 12sp
 	app:fmb_selected_color="#FCE4EC"         //defalut LTGRAY
 	app:fmb_title="Sales"                    //defalut ""
 	app:fmb_title_color="#D72822"            //defalut #333333
+	app:fmb_title_size="14sp"                //defalut 14sp
 	app:fmb_top_line_enable="true" />        //defalut false
 ```
 
@@ -115,6 +119,9 @@ you can't.There is no caching mechanism for FastMenuBar,It only works for settin
 
 # Changelog
 
+* 1.0.2
+    * Add attribute for fmb_icon_size,fmb_title_size,fmb_message_size
+    * Modify the minSdkVersion 14
 * 1.0.1
     * Delete attribute for fmb_title_enable and fmb_message_enable
     * Add attribute for fmb_selected_color

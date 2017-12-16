@@ -2,6 +2,7 @@
 <resources>
     <declare-styleable name="FastMenuBar">
         <attr name="fmb_icon" format="reference" />
+        <attr name="fmb_icon_size" format="dimension" />
         <attr name="fmb_title" format="string" />
         <attr name="fmb_message" format="string" />
         <attr name="fmb_arrow" format="reference" />
@@ -11,7 +12,9 @@
         <attr name="fmb_bot_line_enable" format="boolean" />
         <attr name="fmb_bot_line_margin" format="dimension" />
         <attr name="fmb_title_color" format="color" />
+        <attr name="fmb_title_size" format="dimension" />
         <attr name="fmb_message_color" format="color" />
+        <attr name="fmb_message_size" format="dimension" />
         <attr name="fmb_selected_color" format="color" />
         <attr name="fmb_animation_type" format="integer">
             <flag name="fmb_none" value="0" />

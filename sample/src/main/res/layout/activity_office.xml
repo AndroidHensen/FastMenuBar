@@ -8,21 +8,21 @@
     android:orientation="vertical"
     tools:context="com.handsome.fastmenubar.MainActivity">
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_fade"
         app:fmb_icon="@drawable/icon_office1"
         app:fmb_title="人事申请" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_fade"
         app:fmb_icon="@drawable/icon_office2"
         app:fmb_title="电脑故障" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -30,21 +30,21 @@
         app:fmb_icon="@drawable/icon_office3"
         app:fmb_title="打卡补签" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_fade"
         app:fmb_icon="@drawable/icon_office4"
         app:fmb_title="付款申请" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_fade"
         app:fmb_icon="@drawable/icon_office5"
         app:fmb_title="交通报销" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -52,21 +52,21 @@
         app:fmb_icon="@drawable/icon_office6"
         app:fmb_title="借款申请" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_fade"
         app:fmb_icon="@drawable/icon_office7"
         app:fmb_title="休假申请" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_fade"
         app:fmb_icon="@drawable/icon_office8"
         app:fmb_title="电脑申请" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_fade"

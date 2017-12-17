@@ -1,4 +1,4 @@
-package com.handsome.library;
+package com.handsome.menubar;
 
 import org.junit.Test;
 

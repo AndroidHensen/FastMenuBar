@@ -1,4 +1,4 @@
-package com.handsome.library;
+package com.handsome.menubar;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.handsome.library.test", appContext.getPackageName());
+        assertEquals("com.handsome.menubar.test", appContext.getPackageName());
     }
 }

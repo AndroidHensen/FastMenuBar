@@ -6,7 +6,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.handsome.library.FastMenuBar;
+import com.handsome.menubar.FastMenuBar;
+
 
 public class WechatActivity extends AppCompatActivity implements FastMenuBar.onMenuBarClickListener {
 

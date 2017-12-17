@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context="com.handsome.fastmenubar.MainActivity">
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -20,7 +20,7 @@
         app:fmb_title="运营"
         app:fmb_title_color="#D72822" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -32,7 +32,7 @@
         app:fmb_title="销售"
         app:fmb_title_color="#D72822" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -44,7 +44,7 @@
         app:fmb_title="企业"
         app:fmb_title_color="#D72822" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -55,7 +55,7 @@
         app:fmb_title="任务"
         app:fmb_title_color="#D72822" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -65,7 +65,7 @@
         app:fmb_title="员工"
         app:fmb_title_color="#D72822" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -75,7 +75,7 @@
         app:fmb_title="客户"
         app:fmb_title_color="#D72822" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -86,7 +86,7 @@
         app:fmb_title="数据"
         app:fmb_title_color="#D72822" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -96,7 +96,7 @@
         app:fmb_title="版本"
         app:fmb_title_color="#D72822" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"

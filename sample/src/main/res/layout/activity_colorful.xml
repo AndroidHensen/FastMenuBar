@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -22,7 +22,7 @@
         app:fmb_title_size="16sp"
         app:fmb_top_line_enable="true" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -39,7 +39,7 @@
         app:fmb_title_size="15sp"
         app:fmb_top_line_enable="true" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -56,7 +56,7 @@
         app:fmb_title_size="14sp"
         app:fmb_top_line_enable="true" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"
@@ -73,7 +73,7 @@
         app:fmb_title_size="13sp"
         app:fmb_top_line_enable="true" />
 
-    <com.handsome.library.FastMenuBar
+    <com.handsome.menubar.FastMenuBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:fmb_animation_type="fmb_normal"

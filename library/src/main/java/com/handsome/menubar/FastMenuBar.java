@@ -1,4 +1,4 @@
-package com.handsome.library;
+package com.handsome.menubar;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -152,7 +152,7 @@ public class FastMenuBar extends LinearLayout {
             fmb_menu_top_line.setVisibility(VISIBLE);
         }
         if (fmb_bot_line_enable) {
-            LinearLayout.LayoutParams lp = (LayoutParams) fmb_menu_bot_line.getLayoutParams();
+            LayoutParams lp = (LayoutParams) fmb_menu_bot_line.getLayoutParams();
             lp.setMargins((int) fmb_bot_line_margin, 0, 0, 0);
             fmb_menu_bot_line.setLayoutParams(lp);
         }

@@ -30,7 +30,7 @@ Add the dependency
 
 ```
 dependencies {
-	compile 'com.github.AndroidHensen:FastMenuBar:1.0.1'
+	compile 'com.github.AndroidHensen:FastMenuBar:1.0.3'
 }
 ```
 
@@ -119,6 +119,8 @@ you can't.There is no caching mechanism for FastMenuBar,It only works for settin
 
 # Changelog
 
+* 1.0.3
+    * Change packname
 * 1.0.2
     * Add attribute for fmb_icon_size,fmb_title_size,fmb_message_size
     * Modify the minSdkVersion 14
